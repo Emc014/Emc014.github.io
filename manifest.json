@@ -1,6 +1,6 @@
 {
-  "short_name": "Emc014",
-  "name": "Portafolio creado con React y HTML5",
+  "short_name": "Portafolio",
+  "name": "Portafolio React",
   "icons": [
     {
       "src": "favicon.ico",
