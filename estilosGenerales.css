@@ -125,6 +125,12 @@ p, ul{
     width: 18vh;
     height: 18vh;
 }
+.wEscritorio{
+    display: grid !important;
+}
+.wMovil{
+    display: none !important;
+}
 
 @media(max-width:700px){
     #logo{
@@ -151,5 +157,11 @@ p, ul{
     .Item img{
         width: 18vw;
         height: 18vw;
+    }
+    .wEscritorio{
+        display: none !important;
+    }
+    .wMovil{
+        display: grid !important;
     }
 }
