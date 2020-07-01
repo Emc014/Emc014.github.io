@@ -1,0 +1,25 @@
+.grups{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.grups div{
+    padding: 3vw;
+}
+
+@media(max-width:700px){
+    h3{
+        margin-top: 15vw;
+    }
+    .grups{
+        grid-template: 1fr/1fr;
+    }
+    .grups div{
+        background-color: #0d5986;
+        color: #fff;
+    }
+    .megafono{
+        grid-row: 1;
+    }
+}

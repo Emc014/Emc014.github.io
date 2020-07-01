@@ -1,0 +1,17 @@
+.parrafo{
+    display: grid;
+}
+.parrafo img{
+    align-self:center;
+    justify-self: center;
+    width: 90vw;
+}
+.pgrup{
+    background-color:#0d5986;
+    color: #fff;
+    padding: 5vw;
+    font-size: 1.5rem;
+}
+.responsiveImg, .bgd{
+    width: 50vw !important
+}

@@ -1,0 +1,86 @@
+/* Fuente */
+@font-face{
+    font-family: Comforta;
+    src:url('Fuentes/Comfortaa.ttf')
+}
+@font-face{
+    font-family: Oregano;
+    src:url('Fuentes/Oregano.ttf')
+}
+
+/*Colores */
+.azul{
+    color: #0d5986;
+}
+.bAzul{
+    background-color: #0d5986;
+}
+.brAzul{
+    border-color:#0d5986 !important;
+}
+
+/* Sombras*/
+
+.sombraImgX1{
+    filter: drop-shadow(#000 1px 1px 5px);
+}
+.sombraBox{
+    box-shadow: #333 3px 3px 5px;
+}
+
+/* General */
+
+
+
+
+
+
+
+
+.parrafo{
+    padding: 4vw;
+}
+
+.gridX2{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+}
+.gridX2 img{
+    width: 50vw;
+}
+
+
+
+
+.tecnologias{
+    display: grid;
+    grid-template: 1fr/repeat(4 , 1fr);
+}
+.tecnologias>div{
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    justify-items: center;
+    gap: 1vh;
+}
+.tecnologias img{
+    width: 10vh;
+    height: 10vh;
+}
+
+
+
+
+@media(max-width:700px){
+    
+    .cloudParrafo{
+        grid-row: 2 !important;
+    }
+    .parrafo{
+        background-color: #0d5986;
+        color: #fff;
+    }
+    .gridX2{
+        grid-template: min-content min-content/ 1fr;
+        justify-items: center;
+    }
+}

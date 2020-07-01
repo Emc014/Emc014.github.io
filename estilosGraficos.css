@@ -1,0 +1,48 @@
+.grup{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    gap: 1vh;
+}
+.grup div{
+    padding: 3vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid #0d5986;
+    border-radius: 25px;
+}
+article img{
+    width: 45vw;
+    justify-self: center;
+    float: left;
+}
+.folleto{
+    grid-row: 1/3;
+}
+article{
+    display: grid;
+    gap: 5vh;
+}
+article img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+@media(max-width:700px){
+    .grup div{
+        color:#fff;
+        background-color: #0d5986;
+        border-radius: 0px;
+    }
+    .grup img{
+        border-radius: 0px;
+    }
+    .grup{
+        grid-template-columns: 1fr;
+        gap:0
+    }
+    
+    h3{
+        margin-top: 10vh;
+    }
+}

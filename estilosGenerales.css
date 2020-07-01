@@ -1,0 +1,137 @@
+/* Fuente */
+@font-face{
+    font-family: Comforta;
+    src:url('Fuentes/Comfortaa.ttf')
+}
+@font-face{
+    font-family: Oregano;
+    src:url('Fuentes/Oregano.ttf')
+}
+
+/*Colores */
+.azul{
+    color: #0d5986;
+}
+.bAzul{
+    background-color: #0d5986;
+}
+.brAzul{
+    border-color:#0d5986 !important;
+}
+
+/* Sombras*/
+
+.sombraImgX1{
+    filter: drop-shadow(#000 1px 1px 5px);
+}
+.sombraBox{
+    box-shadow: #333 3px 3px 5px;
+}
+
+/* General */
+body{
+    margin: 0px;
+    font-family: Comforta;
+    color: #0d5986;
+    user-select: none;
+    
+}
+header{
+    height: 10vw;
+    position: relative;
+}
+.nubeHeader,#logo{
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+}
+.nubeHeader{
+    width: 21vw;
+}
+#logo{
+    width: 15vw;
+    top:1.5vh;
+    left:1vw
+}
+.nubeMobil{
+    width: 100%;
+    display: none;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+p, ul{
+    font-size: 1.5rem;
+    line-height: 4.5vh;
+}
+.separador{
+    display: block;
+    grid-column: 1/-1;
+    width: 80%;
+    height: 2px !important;
+    background-color: #ddd;
+    margin-top: 3vh;
+    margin-left: 10%;
+}
+.atras{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    top: 2vw;
+    right: 2vw;
+    border:solid #0d5986;
+    padding: 1vh;
+    border-radius: 100%;
+}
+.atras img{
+    width: 91%;
+}
+.contacto{
+    display: grid;
+    grid-column: min-content 1fr/ 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 10vw;
+}
+.canalesContacto{
+    display: grid;
+    justify-items: center;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap:3vw
+}
+.Item{
+    height: 20vh;
+    width: 20vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    filter: grayscale(1);
+}
+.Item:hover{
+    filter: grayscale(0);
+}
+.Item img{
+    width: 18vh;
+    height: 18vh;
+}
+
+@media(max-width:700px){
+    #logo{
+        width: 33vw;
+        left: 34vw;
+    }
+    .nubeMobil{
+        display: block;
+    }
+    .nubeHeader{
+        display: none;
+        width: 40vw;
+    }
+    .separador{
+        width: 0px;
+    }
+    .conten{
+        margin-top: 15vh;
+    }
+}
