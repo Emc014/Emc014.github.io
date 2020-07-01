@@ -7,7 +7,9 @@
     font-family: Oregano;
     src:url('Fuentes/Oregano.ttf')
 }
-
+a{ 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
 /*Colores */
 .azul{
     color: #0d5986;
