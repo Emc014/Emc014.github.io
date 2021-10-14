@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EMCode</title>
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="estilosGenerales.css">
-        <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-
-        <!-- vista del home -->
-        <div class="vista home">
-            <img src="Imagenes/IconSocial.svg" class='CoeteEscritorio' alt="Cohete">
-            <img src="Imagenes/Logo.svg" class="logo" alt="LogoEMC">
-            <p class="pInicio azul">Bienvenid@, conoce lo que nuestra StartUp puede hacer por vos...</p>
-            <div class="contenFlechas">
-            <div>
-                <img src="Imagenes/Flechas.png" class="flechas" alt="Flechas">
-            </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosGenerales.css">
+    <link rel="stylesheet" href="./Seccion1.css">
+</head>
+<body>
+    <div id="display">
+        <div id="menu">
+            <nav>
+                <span>Sobre mi</span>
+                <span>Mis Proyectos</span>
+                <img src="./svg/CerrarMenu.svg" alt="BotonCerrarMenu" id="BotonCerrar" class="sombraBoton">
+            </nav>
+            <header class="grid1 transition05 fotograma1">
+                <div id="botonMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="mascara1">
+                    <img src="./Imagenes/MiFoto.png" alt="MiFotoDePerfil" id="MiFotoDePerfil">
+                </div>
+                <div id="fondoVerde">
+                </div>
+                <div id="mascara2" class="transition3">
+                    <ul class="sombraTexto">
+                        <li>¡HOLA!</li>
+                        <li>Mi nombre es <strong>Ezequiel Ciccioli</strong></li>
+                        <li>¡Bienvenido a mi portafolio!</li>
+                        <li>Gracias por tomarse un momento para considerar mi perfil. </li>
+                        <li>Espero que sea de su agrado.</li>
+                    </ul>
+                </div>
+                <div id="sobreMi">
+                    <h3>Sobre mi:</h3>
+                    <p>
+                        Soy desarrollador web desde hace 7 años, poseo conocimientos de front end y back end, también he desarrollado aplicaciones de escritorio con el framework Electron y aplicaciones móviles con React Native y Ionic.   
+                    </p>
+                </div>
+                <div id="misConocimientos" class="naranja">
+                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="iconHTML5">
+                    <img src="https://cdn.svgporn.com/logos/pwa.svg" alt="iconPWA">
+                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="iconReact">
+                    <img src="https://cdn.svgporn.com/logos/svelte-icon.svg" alt="iconSvelt">
+                    <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="iconJS">
+                    <img src="https://cdn.svgporn.com/logos/typescript-icon.svg" alt="iconTS">
+                    <img src="https://cdn.svgporn.com/logos/php.svg" alt="iconPHP">
+                    <img src="https://cdn.svgporn.com/logos/nodejs.svg" alt="iconNode">
+                    <img src="https://cdn.svgporn.com/logos/mariadb.svg" alt="iconMariaDB">
+                    <img src="https://cdn.svgporn.com/logos/mongodb.svg" alt="iconMongoDB">
+                    <img src="https://cdn.svgporn.com/logos/aws.svg" alt="iconAWS">
+                    <img src="https://cdn.svgporn.com/logos/firebase.svg" alt="iconFirebase">
+                    <img src="https://cdn.svgporn.com/logos/electron.svg" alt="iconElecton">
+                    <img src="https://cdn.svgporn.com/logos/docker.svg" alt="iconDocker">
+                    <img src="https://cdn.svgporn.com/logos/git-icon.svg" alt="iconoGit">
+                    <img src="https://cdn.svgporn.com/logos/github-icon.svg" alt="iconGitHub">
+                    <img src="https://cdn.svgporn.com/logos/gitlab.svg" alt="iconGitLab">
+                </div>
+            </header>
         </div>
-
-        <!-- vista de servicios -->
-        <div class="vista servicios">
-            <h2 class="azul">Nuestros Servicios</h2>
-            <div class="nav">
-                <span class="homeNav brAzul"></span>
-                <span class="separadorNav bAzul"></span>
-                <span class="serviciosNav hover brAzul bAzul"></span>
-                <span class="separadorNav bAzul"></span>
-                <span class="contactoNav brAzul"></span>
-            </div>
-            <div class="serviciosConten">
-                <a href="webs.html" class="servicio sombraBox webPages">
-                    <h3>Páginas Web</h3>
-                </a>
-                <a href="hardware.html" class="servicio sombraBox hardware">
-                    <h3>Equipos a Medida</h3>
-                </a>
-                <a href="software.html" class="servicio sombraBox software">
-                    <h3>Software On Cloud</h3>
-                </a>
-                <a href="graficos.html" class="servicio sombraBox grafico">
-                    <h3>Diseño Gráfico</h3>
-                </a>
-                <a href="social.html" class="servicio sombraBox socialManager">
-                    <h3>Social Manager</h3>
-                </a>
-            </div>
-        </div>
-
-        <!-- vista de contacto -->
-        <div class="vista contacto">
-            <h2 class="azul">Contacto</h2>
-            <p class="azul mensaje">Esperamos tu consulta sin cargos ni compromisos,
-                encontremos juntos la solución ideal para vos...</p>
-            <div class="nav">
-                <span class="homeNav brAzul"></span>
-                <span class="separadorNav bAzul"></span>
-                <span class="serviciosNav brAzul"></span>
-                <span class="separadorNav bAzul"></span>
-                <span class="contactoNav hover brAzul bAzul"></span>
-            </div>
-            
-            <div class="canalesContacto">
-                <a id='whatsapp' class="sombraBox wEscritorio Item" target="_blanck" href="https://web.whatsapp.com/send?phone=543585176888">
-                    <img src="Imagenes/whatsapp.svg" alt="">
-                </a>
-                <a id='whatsapp' class="sombraBox wMovil Item" target="_blanck" href="https://wa.me/543585176888">
-                    <img src="Imagenes/whatsapp.svg" alt="">
-                </a>
-                <a id='Facebook' class="sombraBox Item" target="_blanck" href="https://www.facebook.com/EMC-105522611216620">
-                    <img src="Imagenes/facebook.svg" alt="">
-                </a>
-                <a id='Instagram' class="sombraBox Item" target="_blanck" href="https://www.instagram.com/emc.code/">
-                    <img src="Imagenes/instagram.svg" alt="">
-                </a>
-            </div>
-        </div>
-        <script src="Logica.js"></script>
-    </body>
+    </div>
+    <script src='./Script.js'></script>
+    <script src="./TimeLine.js"></script>
+</body>
 </html>
