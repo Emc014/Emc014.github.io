@@ -32,16 +32,23 @@ document.querySelectorAll('.cImg').forEach((e,i)=>{
     e.style.top= `${Posiciones[i][0]}%`
     e.style.left=`${Posiciones[i][1]}%`
 })
-let refres;
+
 document.addEventListener('mousemove',(e)=>{
-    window.clearTimeout(refres)
     let topMouse = e.clientY
     let leftMouse = e.clientX
-    console.log(`alto:${topMouse}, ancho:${leftMouse}`)
-    refres = setTimeout(()=>{
-        document.querySelectorAll(`#misConocimientos img`).forEach(e=>{
-            e.style.top= (-topMouse)+"px";
-            e.style.left= (-leftMouse)+"px";
-        })
-    },10)
+    let widthDisplay= window.innerWidth/2
+    let heightDisplay= window.innerHeight/2
+    if(window.scrollY >1800){
+        // setTimeout(()=>{
+            console.log(`alto:${topMouse}, ancho:${leftMouse}`)
+            document.querySelectorAll(`#misConocimientos img`).forEach((e,i)=>{
+                e.style.top= ((-topMouse+heightDisplay)/(i<6 ? 2 :(i<13 ? 4 : 6)))+"px";
+                e.style.left= ((-leftMouse+widthDisplay)/(i<6 ? 2 :(i<13 ? 4 : 6)))+"px";
+            })
+        // },30)
+    }
 })
+
+let contadorFPS = ()=>{
+    let contador = 
+}

@@ -42,7 +42,7 @@ h3{
 }
 
 .transition05, .transition05 *{
-    transition: all 0.5s;
+    transition: all 0.5s linear;
 }
 .transition3 *{
     transition: all 3s;

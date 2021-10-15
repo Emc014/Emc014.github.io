@@ -93,13 +93,20 @@ ul li:nth-of-type(1){
 
 #misConocimientos{
     position: absolute;
-    width: 102vw;
-    height: 102vh;
+    overflow: hidden;
+    border-radius: 100px;
+    width: 0vw;
+    height: 0vw;
     z-index: 25;
     justify-items: center;
     align-items: center;
     display: grid;
     grid-template: 1fr/1fr;
+}
+.fotograma7 #misConocimientos{
+    width: 102vw;
+    height: 102vh;
+    border-radius: 0px 0px;
 }
 #misConocimientos > div{
     width: 80%;
@@ -108,24 +115,31 @@ ul li:nth-of-type(1){
     grid-row: 1;
     position: relative;
 }
-.nivel1{
+.nivel1 img{
     z-index: 90;
 }
-.nivel2{
+.nivel2 img{
     z-index: 80;
 }
-.nivel3{
+.nivel3 img{
     z-index: 70;
 }
 
 #misConocimientos img{
     height: 50px;
-    filter: drop-shadow(#fff 1px 1px 1px);
     position: absolute;
+    filter: drop-shadow(#333 2px 2px 1px);
 }
 #misConocimientos img:hover{
-    transform: scale(2);
+    filter: drop-shadow(#fff 1px 1px 2px) drop-shadow(#fff -1px -1px 2px);
+    transform: scale(4);
     z-index: 91;
+}
+#misConocimientos h3{
+    position: absolute;
+    font-size: 2rem;
+    top:50px;
+    left: 100px;
 }
 .cImg{
     position: absolute;
