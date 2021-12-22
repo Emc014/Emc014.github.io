@@ -26,6 +26,8 @@ ul{
 }
 
 ul li{
+    margin-right: 10%;
+    text-align: center;
     font-size: 2rem;
     transform: scale(.1);
     filter: blur(100px);
@@ -63,13 +65,16 @@ ul li:nth-of-type(1){
 .fotograma6 #mascara1{
     height: 100%;
     border-radius: 0px;
-    transform: translateX(-5vw);
+    left: 0px;
+    bottom: 0px;
 }
 .fotograma6 #fondoVerde{
     transform: scale(9);
 }
 #sobreMi{
     z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
     font-size: 2rem;
     transition: all 0.5s;
     filter: blur(100px);
@@ -116,13 +121,13 @@ ul li:nth-of-type(1){
     position: relative;
 }
 .nivel1 img{
-    z-index: 90;
+    z-index: 70;
 }
 .nivel2 img{
     z-index: 80;
 }
 .nivel3 img{
-    z-index: 70;
+    z-index: 90;
 }
 
 #misConocimientos img{
